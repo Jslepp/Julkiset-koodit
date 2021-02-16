@@ -32,22 +32,4 @@ public class Jalkapallojoukkue {
         return "Tiimin nimi: " + this.nimi + "\n" + "Kotistadion: " +  this.stadion;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-
-        if (obj == null) {
-            return false;
-        }
-        
-        if (obj.getClass() != Jalkapallojoukkue.class) {
-            return false;
-        }
-
-        Jalkapallojoukkue toinen = (Jalkapallojoukkue) obj;
-
-        return nimi.equals(toinen.nimi);
-    }
 }	

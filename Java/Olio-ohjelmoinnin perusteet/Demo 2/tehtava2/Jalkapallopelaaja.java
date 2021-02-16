@@ -34,25 +34,6 @@ public class Jalkapallopelaaja {
         return this.pelaajannimi + ", " + this.numero;
     }
     
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-
-        if (obj == null) {
-            return false;
-        }
-        
-        if (obj.getClass() != Jalkapallopelaaja.class) {
-            return false;
-        }
-
-        Jalkapallopelaaja toinen = (Jalkapallopelaaja) obj;
-
-        return pelaajannimi.equals(toinen.pelaajannimi);
-    }
-    
     public static void generoiPelaajat() {
         Jalkapallopelaaja[] jalkapallopelaaja = new Jalkapallopelaaja[22];
         int pelaajaArpa = 0;
